@@ -9,6 +9,7 @@ let submitBtn = document.getElementById('alarm-btn');
 let alarmTime;
 let almTimesArray = [];
 let timeouts = [];
+let isPresent;
 
 
 function updateCurrentTime () {
@@ -57,8 +58,15 @@ function alarmSet() {
         removeFromAlmTimesArray(alarmTime);
     })
 
-    contan.appendChild(alarmDiv);
-    almTimesArray.push(alarmTime);
+    isPresent = almTimesArray.includes(alarmTime);
+
+    if(!isPresent){
+        contan.appendChild(alarmDiv);
+        almTimesArray.push(alarmTime);
+    } else {
+        alert('This alarm is already present');
+    }
+    
     console.log('Alm times array:', almTimesArray);
 }
 
@@ -82,6 +90,7 @@ function removeFromAlmTimesArray(alarmTime){
         console.log('Alm times array:', almTimesArray);
     }
 }
+
 
 showAlarm();
 setInterval(updateCurrentTime, 1000);
