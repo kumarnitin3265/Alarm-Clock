@@ -1,0 +1,110 @@
+#main-clk {
+    width: 350px;
+    height: 400px;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    margin: auto;
+    margin-top: 150px;
+    border: 3px solid black;
+    border-radius: 20%;
+}
+
+#crnt-time {
+    font-size: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#set-alarm {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+#set-alarm #alarm-btn {
+    height: 30px;
+    margin-left: 50px;
+    background: aliceblue;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+#added-alarm {
+    margin-top: 0px;
+}
+
+#added-alarm h3 {
+    margin-left: 45px;
+}
+
+#alarms {
+    margin-top: -20px;
+    font-size: 13px;
+    height: 200px;
+    overflow: auto;
+}
+
+/* width */
+#alarms::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  #alarms::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  #alarms::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  #alarms::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+
+
+
+
+
+
+
+
+#all-added-alarms{
+    height: auto;
+}
+
+.added-alarm {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 40px;
+    margin-left: -50px;
+    /* height: 100px; */
+}
+
+.added-alarm .dlt {
+    font-size: 13px;
+    height: 25px;
+    width: 70px;
+    margin-left: 100px;
+    background: aliceblue;
+    margin-top: 13px;
+    border-radius: 5px;
+}
+
+.newAlarm{
+    display: flex;
+}
+
+.newAlarm input{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}

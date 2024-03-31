@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="main-clk">
+        <div id="crnt-time">
+            <h3 id="current-time">00:00:00</h3>
+        </div>
+        <div id="set-alarm">
+            <div class="newAlarm">
+                <input type="text" id="alarmHrs">
+                <strong>:</strong>
+                <input type="text" id="alarmMin">
+                <strong>:</strong>
+                <input type="text" id="alarmSec">
+                <input type="text" id="alarmPeriod" value="PM">
+            </div>
+            <button id="alarm-btn">Set Alarm</button>
+        </div>
+        <div id="all-added-alarms">
+            <div id="added-alarm">
+                <h3>Alarms</h3>
+                <div id="alarms"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
